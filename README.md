@@ -33,7 +33,7 @@
 
 
 ## ดาวโหลด
-| version  | plugin support                        | Download  zip/phar                                                 |
+| version  | plugin support                        | Download  zip/jar                                                 |
 | ---- | ------------------------------------ | ---------------------------------------------------------- |
 | 1.0  | nukkit api 1.0.9 mcpe 1.14 [Click here](https://github.com/NukkitX/Nukkit) | [คลิก](https://github.com/HmmHmmmm/WorldProtect/releases/1.0) |
 
