@@ -29,7 +29,7 @@
 
 
 **วิธีใช้งาน**<br>
-- เวอร์ชั่น 1.0 คลิปตัวอย่าง [คลิก](https://youtu.be/)
+- เวอร์ชั่น 1.0 คลิปตัวอย่าง [คลิก](https://youtu.be/PvfZjUsIhqo)
 
 
 ## ดาวโหลด
@@ -43,8 +43,8 @@
 - /worldprotect info : เครดิตผู้สร้างปลั๊กอิน
 - /worldprotect event : ดูอีเว้นท์ต่างๆ
 - /worldprotect set <worldname> <event> <true:false> : โพรเทตต่างๆ
-- /worldprotect banitem <worldname> <id:damage> : แบนไอเทม
-- /worldprotect unbanitem <worldname> <id:damage> : ปลดแบนไอเทม
+- /worldprotect banitem <worldname> <itemId> <itemDamage> : แบนไอเทม
+- /worldprotect unbanitem <worldname> <itemId> <itemDamage> : ปลดแบนไอเทม
 - /worldprotect bancmd <worldname> <command> : แบนคำสั่ง
 - /worldprotect unbancmd <worldname> <command> : ปลดแบนคำสั่ง
 - /worldprotect whitelist <playerName> : อนุญาตให้ผู้เล่นใช้อีเว้นท์ต่างๆ

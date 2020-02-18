@@ -43,8 +43,8 @@ public class WorldProtectCommand extends Command{
       sender.sendMessage("§a/worldprotect info : §fเครดิตผู้สร้างปลั๊กอิน");
       sender.sendMessage("§a/worldprotect event : §fดูอีเว้นท์ต่างๆ");
       sender.sendMessage("§a/worldprotect set <worldname> <event> <true:false> : §fโพรเทตต่างๆ");
-      sender.sendMessage("§a/worldprotect banitem <worldname> <id:damage> : §fแบนไอเทม");
-      sender.sendMessage("§a/worldprotect unbanitem <worldname> <id:damage> : §fปลดแบนไอเทม");
+      sender.sendMessage("§a/worldprotect banitem <worldname> <itemId> <itemDamage> : §fแบนไอเทม");
+      sender.sendMessage("§a/worldprotect unbanitem <worldname> <itemId> <itemDamage> : §fปลดแบนไอเทม");
       sender.sendMessage("§a/worldprotect bancmd <worldname> <command> : §fแบนคำสั่ง");
       sender.sendMessage("§a/worldprotect unbancmd <worldname> <command> : §fปลดแบนคำสั่ง");
       sender.sendMessage("§a/worldprotect whitelist <playerName> : §fอนุญาตให้ผู้เล่นใช้อีเว้นท์ต่างๆ");
