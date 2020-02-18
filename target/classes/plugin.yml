@@ -1,0 +1,13 @@
+name: "WorldProtect"
+main: hmmhmmmm.worldprotect.WorldProtect
+author: "HmmHmmmm"
+version: "1.0"
+api: ["1.0.9"]
+website: https://github.com/HmmHmmmm
+
+permissions:
+    worldprotect.command:
+        default: false
+        children:
+            worldprotect.command.worldprotect:
+                default: op
