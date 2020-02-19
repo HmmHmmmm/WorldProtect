@@ -42,3 +42,7 @@
 
 **Command**<br>
 - /worldprotect : เปิด gui form
+
+
+## LICENSE
+ใบอนุญาต GPL-3.0 [license](https://github.com/HmmHmmmm/WorldProtect/blob/master/LICENSE)

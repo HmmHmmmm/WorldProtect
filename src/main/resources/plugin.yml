@@ -3,7 +3,7 @@ main: hmmhmmmm.worldprotect.WorldProtect
 author: "HmmHmmmm"
 version: "${pom.version}"
 api: ["1.0.9"]
-website: https://github.com/HmmHmmmm
+website: https://github.com/HmmHmmmm/WorldProtect
 
 permissions:
     worldprotect.command:
