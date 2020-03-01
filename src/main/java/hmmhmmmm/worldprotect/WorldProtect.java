@@ -81,25 +81,33 @@ public class WorldProtect extends PluginBase{
          String[] arr = eventList.split(":");
          eventMap.put(arr[0], arr[1]);
       }
-   }      
+   }
+   
    public Config getData(){
       return data;   }
+  
    public WorldProtectForm getWorldProtectForm(){
       return form;   }
+
    public String getPrefix(){
       return "§e[§b"+prefix+"§e]§f";
    }
+ 
    public String getFacebook(){
       return facebook;
-   } 
+   }
+   
    public String getYoutube(){
       return youtube;
-   } 
+   }
+   
    public String getDiscord(){
       return discord;
-   } 
+   }
+   
    public Language getLanguage(){
       return language;   }
+   
    public String getPluginInfo(){
       String author = String.join(", ", getDescription().getAuthors());
       List<String> arrayList = Arrays.asList(
@@ -114,6 +122,7 @@ public class WorldProtect extends PluginBase{
       );
       return String.join("\n", arrayList);
    }
+   
    public List<String> getEventListBoolean(){
       List<String> listBoolean = Arrays.asList(
          "place:"+getLanguage().getTranslate("event.place"),
@@ -138,14 +147,17 @@ public class WorldProtect extends PluginBase{
          "itemframe-drop:"+getLanguage().getTranslate("event.itemframe-drop")
       );
       return listBoolean;   }
+   
    public boolean isset(String name){
       return data.exists("worlds."+name);
    }
+   
    public Set<String> getWorld(){
       Set<String> key = data.getSection("worlds").getKeys();
       key.removeIf(s -> s.contains("."));
       return key;
    }
+   
    public void set(String name){
       data.set("worlds."+name+".place", false);
       data.set("worlds."+name+".break", false);
@@ -171,6 +183,7 @@ public class WorldProtect extends PluginBase{
       data.set("worlds."+name+".bancmd", new ArrayList<String>());
       data.save();
    }
+   
    public void edit(String name, Map<String, Boolean> eventBoolean){
       for(Map.Entry<String, Boolean> map : eventBoolean.entrySet()){
          String key = map.getKey();
@@ -181,6 +194,7 @@ public class WorldProtect extends PluginBase{
       }
       data.save();
    }
+
    public void remove(String name){
       Map<String, Object> map = (Map<String, Object>) data.get("worlds");
       if(map == null){
@@ -190,50 +204,59 @@ public class WorldProtect extends PluginBase{
       data.set("worlds", map);
       data.save();
    }
+   
    public boolean isFlag(String name, String flag){
       return data.exists("worlds."+name+"."+flag);
    }
+   
    public boolean getFlagBoolean(String name, String flag){
       return (boolean) data.get("worlds."+name+"."+flag);
    }
+   
    public void setFlagBoolean(String name, String flag, boolean enabled){
       data.set("worlds."+name+"."+flag, enabled);
       data.save();
    }
+   
    public List<String> getFlagList(String name, String flag){
       return (List) data.get("worlds."+name+"."+flag);
    }
+   
    public void addFlagList(String name, String flag, String list){
       List<String> array = new ArrayList<String>(getFlagList(name, flag));
       array.add(list);
       data.set("worlds."+name+"."+flag, array);
       data.save();
    }
+
    public void resetFlagList(String name, String flag){
       data.set("worlds."+name+"."+flag, new ArrayList<String>());
       data.save();
    }
+   
    public void removeFlagList(String name, String flag, String list){
       List<String> array = new ArrayList<String>(getFlagList(name, flag));
       array.remove(list);
       data.set("worlds."+name+"."+flag, array);
       data.save();
    }
+   
    public List<String> getWhiteList(){
       return (List) data.get("whitelist");
    }
+   
    public void addWhiteList(String list){
       List<String> array = new ArrayList<String>(getWhiteList());
       array.add(list);
       data.set("whitelist", array);
       data.save();
    }
+   
    public void removeWhiteList(String list){
       List<String> array = new ArrayList<String>(getWhiteList());
       array.remove(list);
       data.set("whitelist", array);
       data.save();
    }
-   
    
 }

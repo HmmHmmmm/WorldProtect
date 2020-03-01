@@ -11,7 +11,16 @@ Download WorldProtect.jar https://github.com/HmmHmmmm/WorldProtect/releases/tag/
 # English
 
 
-# Event
+**Features of plugin**<br>
+- Is a protection world plugin By using events #event
+- Have ban item
+- Have ban cmd
+- Have whitelist
+- Have gui form
+- Have language thai and english (You can edit the language you don't like at, `/resources/language`)
+
+
+**Event**<br>
 - place (Player place block)
 - break (Player break block)
 - interact (Player touch block)
@@ -34,15 +43,6 @@ Download WorldProtect.jar https://github.com/HmmHmmmm/WorldProtect/releases/tag/
 - itemframe-drop (Item frame fall)
 
 
-**Features of plugin**<br>
-- Is a protection world plugin By using events #event
-- Have ban item
-- Have ban cmd
-- Have whitelist
-- Have gui form
-- Have language thai and english (You can edit the language you don't like at, `/resources/language`)
-
-
 **How to use**<br>
 - 
 
@@ -54,7 +54,16 @@ Download WorldProtect.jar https://github.com/HmmHmmmm/WorldProtect/releases/tag/
 # Thai
 
 
-# อีเว้นท์
+**คุณสมบัติของปลั๊กอิน**<br>
+- เป็นปลั๊กอินโพรเทคโลก โดยใช้อีเว้นท์ #อีเว้นท์
+- มี ban item
+- มี ban cmd
+- มี whitelist
+- มี gui form
+- มีภาษา thai และ english (สามารถแก้ไขภาษาที่คุณไม่ชอบได้ที่ `WorldProtect/resources/language`)
+
+
+**อีเว้นท์**<br>
 - place (ผู้เล่นวางบล็อก)
 - break (ผู้เล่นแตะบล็อก)
 - interact (ผู้เล่นแตะบล็อก)
@@ -75,16 +84,6 @@ Download WorldProtect.jar https://github.com/HmmHmmmm/WorldProtect/releases/tag/
 - food (ผู้เล่นหลอดอาหารไม่ลด)
 - teleport (ผู้เล่นวาร์ป)
 - itemframe-drop (ไอเทมโชว์ตก)
-
-
-**คุณสมบัติของปลั๊กอิน**<br>
-- เป็นปลั๊กอินโพรเทคโลก โดยใช้อีเว้นท์ #อีเว้นท์
-- มี ban item
-- มี ban cmd
-- มี whitelist
-- มี gui form
-- มีภาษา thai และ english (สามารถแก้ไขภาษาที่คุณไม่ชอบได้ที่ `WorldProtect/resources/language`)
-
 
 
 **วิธีใช้งาน**<br>
