@@ -6,8 +6,8 @@ api: ["1.0.9"]
 website: https://github.com/HmmHmmmm/WorldProtect
 
 permissions:
-    worldprotect.command:
-        default: false
-        children:
-            worldprotect.command.worldprotect:
-                default: op
+  worldprotect:
+    default: false
+    children:
+      worldprotect.command:
+        default: op
