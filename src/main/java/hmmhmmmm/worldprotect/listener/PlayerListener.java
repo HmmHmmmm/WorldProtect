@@ -64,7 +64,8 @@ public class PlayerListener implements Listener{
       }
    }
    
-   @EventHandler   public void onPlayerBucketEmpty(PlayerBucketEmptyEvent event){
+   @EventHandler
+   public void onPlayerBucketEmpty(PlayerBucketEmptyEvent event){
       Player player = event.getPlayer();
       Set<String> wps = plugin.getWorld();
       for(String worldname : wps){
@@ -129,7 +130,8 @@ public class PlayerListener implements Listener{
       }
    }
       
-   @EventHandler   public void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent event){
+   @EventHandler
+   public void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent event){
       Player player = event.getPlayer();
       String message = event.getMessage();
       Set<String> wps = plugin.getWorld();

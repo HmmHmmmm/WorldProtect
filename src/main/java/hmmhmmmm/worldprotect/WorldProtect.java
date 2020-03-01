@@ -84,10 +84,12 @@ public class WorldProtect extends PluginBase{
    }
    
    public Config getData(){
-      return data;   }
+      return data;
+   }
   
    public WorldProtectForm getWorldProtectForm(){
-      return form;   }
+      return form;
+   }
 
    public String getPrefix(){
       return "§e[§b"+prefix+"§e]§f";
@@ -106,7 +108,8 @@ public class WorldProtect extends PluginBase{
    }
    
    public Language getLanguage(){
-      return language;   }
+      return language;
+   }
    
    public String getPluginInfo(){
       String author = String.join(", ", getDescription().getAuthors());
@@ -146,7 +149,8 @@ public class WorldProtect extends PluginBase{
          "teleport:"+getLanguage().getTranslate("event.teleport"),
          "itemframe-drop:"+getLanguage().getTranslate("event.itemframe-drop")
       );
-      return listBoolean;   }
+      return listBoolean;
+   }
    
    public boolean isset(String name){
       return data.exists("worlds."+name);
