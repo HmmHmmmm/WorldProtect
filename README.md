@@ -5,7 +5,7 @@
 
 [Language Thai](#thai)
 
-Download WorldProtect.jar https://github.com/HmmHmmmm/WorldProtect/releases/tag/2.1
+Download WorldProtect.jar https://nukkitx.com/resources/worldprotect.400/
 
 
 # English
