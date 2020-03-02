@@ -3,7 +3,6 @@
 
 [Language English](#english)
 
-[Language Thai](#thai)
 
 Download WorldProtect.jar https://nukkitx.com/resources/worldprotect.400/
 
@@ -32,7 +31,7 @@ Download WorldProtect.jar https://nukkitx.com/resources/worldprotect.400/
 - move (Player Walking)
 - fly (Player Flying)
 - keepinventory (Player death item fall)
-- keepexperience (ผู้Player death xp fall)
+- keepexperience (Player death xp fall)
 - bucketfill (Player fill bucket)
 - bucketempty (Player empty bucket)
 - chat (Player chat print)
@@ -51,47 +50,12 @@ Download WorldProtect.jar https://nukkitx.com/resources/worldprotect.400/
 - /worldprotect : open gui form
 
 
-# Thai
+**Images**<br>
+![1](https://github.com/HmmHmmmm/WorldProtect/blob/master/images/2.0/1.jpg)
 
+![2](https://github.com/HmmHmmmm/WorldProtect/blob/master/images/2.0/2.jpg)
 
-**คุณสมบัติของปลั๊กอิน**<br>
-- เป็นปลั๊กอินโพรเทคโลก โดยใช้อีเว้นท์ #อีเว้นท์
-- มี ban item
-- มี ban cmd
-- มี whitelist
-- มี gui form
-- มีภาษา thai และ english (สามารถแก้ไขภาษาที่คุณไม่ชอบได้ที่ `WorldProtect/resources/language`)
-
-
-**อีเว้นท์**<br>
-- place (ผู้เล่นวางบล็อก)
-- break (ผู้เล่นแตะบล็อก)
-- interact (ผู้เล่นแตะบล็อก)
-- damage (ผู้เล่นอมตะ)
-- pvp (ผู้เล่นต่อสู้)
-- explode (ระเบิดบล็อกกระจาย)
-- weather (ฝนตก)
-- item-drop (ผู้เล่นทิ้งของ)
-- move (ผู้เล่นเดิน)
-- fly (ผู้เล่นบิน)
-- keepinventory (ผู้เล่นตายของตก)
-- keepexperience (ผู้เล่นตายxpตก)
-- bucketfill (ผู้เล่นเทถัง)
-- bucketempty (ผู้เล่นตักถัง)
-- chat (ผู้เล่นพิมพ์)
-- bedenter (ผู้เล่นกดเตียง)
-- eatfood (ผู้เล่นกินอาหาร)
-- food (ผู้เล่นหลอดอาหารไม่ลด)
-- teleport (ผู้เล่นวาร์ป)
-- itemframe-drop (ไอเทมโชว์ตก)
-
-
-**วิธีใช้งาน**<br>
-- 
-
-
-**Command**<br>
-- /worldprotect : เปิด gui form
+![3](https://github.com/HmmHmmmm/WorldProtect/blob/master/images/2.0/3.jpg)
 
 
 # Config
