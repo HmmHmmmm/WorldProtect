@@ -121,7 +121,7 @@ public class PlayerListener implements Listener{
                && player.getLevel().getFolderName().equals(worldname)
                && plugin.getFlagBoolean(worldname, "chat")
             ){
-               player.sendPopup(getPrefix()+" "+lang.getTranslate(
+               player.sendMessage(getPrefix()+" "+lang.getTranslate(
                   "listener.chat.error1"
                ));
                event.setCancelled(true);
@@ -141,22 +141,21 @@ public class PlayerListener implements Listener{
                worldname,
                "bancmd"
             );
-            if(cmdLists.size() == 0){
-               return;
-            }
-            for(String cmdList : cmdLists){
-               List<String> whitelist = new ArrayList<String>(
-                  plugin.getWhiteList()
-               );
-               if(!whitelist.contains(player.getName().toLowerCase())
-                  && player.getLevel().getFolderName().equals(worldname)
-                  && message.startsWith(cmdList)
-               ){
-                  player.sendMessage(getPrefix()+" "+lang.getTranslate(
-                     "listener.bancmd.error1",
-                     new String[]{message}
-                  ));
-                  event.setCancelled(true);
+            if(!(cmdLists.size() == 0)){
+               for(String cmdList : cmdLists){
+                  List<String> whitelist = new ArrayList<String>(
+                     plugin.getWhiteList()
+                  );
+                  if(!whitelist.contains(player.getName().toLowerCase())
+                     && player.getLevel().getFolderName().equals(worldname)
+                     && message.startsWith(cmdList)
+                  ){
+                     player.sendMessage(getPrefix()+" "+lang.getTranslate(
+                        "listener.bancmd.error1",
+                        new String[]{message}
+                     ));
+                     event.setCancelled(true);
+                  }
                }
             }
          }
@@ -272,26 +271,25 @@ public class PlayerListener implements Listener{
                worldname,
                "banitem"
             );
-            if(itemLists.size() == 0){
-               return;
-            }
-            for(String itemList : itemLists){
-               String[] items = itemList.split(":");
-               int id = Integer.parseInt(items[0]);
-               int damage = Integer.parseInt(items[1]);
-               whitelist = new ArrayList<String>(
-                  plugin.getWhiteList()
-               );
-               if(!whitelist.contains(player.getName().toLowerCase())
-                  && player.getLevel().getFolderName().equals(worldname)
-                  && item.getId() == id 
-                  && item.getDamage() == damage
-               ){
-                  player.sendPopup(getPrefix()+" "+lang.getTranslate(
-                     "listener.banitem.error1",
-                     new String[]{item.getName()}
-                  ));
-                  event.setCancelled(true);
+            if(!(itemLists.size() == 0)){
+               for(String itemList : itemLists){
+                  String[] items = itemList.split(":");
+                  int id = Integer.parseInt(items[0]);
+                  int damage = Integer.parseInt(items[1]);
+                  whitelist = new ArrayList<String>(
+                     plugin.getWhiteList()
+                  );
+                  if(!whitelist.contains(player.getName().toLowerCase())
+                     && player.getLevel().getFolderName().equals(worldname)
+                     && item.getId() == id 
+                     && item.getDamage() == damage
+                  ){
+                     player.sendPopup(getPrefix()+" "+lang.getTranslate(
+                        "listener.banitem.error1",
+                        new String[]{item.getName()}
+                     ));
+                     event.setCancelled(true);
+                  }
                }
             }
          }
